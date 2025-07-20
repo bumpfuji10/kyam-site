@@ -10,9 +10,7 @@ export default function ProfileCard() {
         <h3 className="text-xl font-semibold text-gray-900 mb-1">Yo Kamada</h3>
         <p className="text-gray-600 mb-4">ソフトウェアエンジニア</p>
         <p className="text-gray-600 text-sm text-center leading-relaxed mb-4">
-          Web開発とソフトウェア設計に情熱を注ぐエンジニアです。
-          新しい技術を学び、実践することが大好きです。
-          このブログでは技術的な学びや個人開発について書いています。
+          都内のスタートアップに(横浜の自宅から)稼働しているエンジニアです。技術的なことやその他つぶやき的なことを書いていきます。※このブログはClaude Codeさんに土下座して作ってもらいました。
         </p>
         
         <div className="flex space-x-3 mt-2">
