@@ -66,10 +66,22 @@ export default function AboutPage() {
             
             <div className="mt-6 pt-6 border-t border-gray-200">
               <div className="flex space-x-4 justify-center">
-                <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors">
+                <a 
+                  href="https://github.com/bumpfuji10" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-blue-600 transition-colors"
+                  title="GitHub"
+                >
                   <Github className="w-5 h-5" />
                 </a>
-                <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors">
+                <a 
+                  href="https://x.com/bumpfuji10" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-blue-600 transition-colors"
+                  title="X (Twitter)"
+                >
                   <Twitter className="w-5 h-5" />
                 </a>
               </div>
@@ -133,28 +145,6 @@ export default function AboutPage() {
             </div>
           </section>
 
-          <section className="bg-white rounded-lg border border-gray-200 p-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">お問い合わせ</h3>
-            <p className="text-gray-700 mb-4">
-              技術的な質問、お仕事のご相談、その他何かございましたらお気軽にご連絡ください。
-            </p>
-            <div className="flex items-center space-x-4">
-              <a
-                href="mailto:contact@example.com"
-                className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
-              >
-                <Mail className="w-4 h-4 mr-2" />
-                メールで連絡
-              </a>
-              <a
-                href="#"
-                className="inline-flex items-center px-6 py-3 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors"
-              >
-                <Github className="w-4 h-4 mr-2" />
-                GitHubを見る
-              </a>
-            </div>
-          </section>
         </div>
       </div>
     </div>
