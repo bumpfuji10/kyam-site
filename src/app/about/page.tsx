@@ -1,4 +1,5 @@
 import { Mail, Github, Twitter, MapPin, Calendar } from 'lucide-react';
+import Image from 'next/image';
 
 export default function AboutPage() {
   const skills = [
@@ -43,9 +44,13 @@ export default function AboutPage() {
         <div className="lg:col-span-1">
           <div className="bg-white rounded-lg border border-gray-200 p-6 sticky top-8">
             <div className="text-center mb-6">
-              <div className="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-gray-500">Photo</span>
-              </div>
+              <Image
+                src="/me.png"
+                alt="Logo"
+                width={100}
+                height={100}
+                className="rounded-full mx-auto mb-4 flex items-center justify-center"
+              />
               <h2 className="text-2xl font-bold text-gray-900 mb-1">Yo Kamada</h2>
               <p className="text-gray-600 mb-4">ソフトウェアエンジニア</p>
             </div>
