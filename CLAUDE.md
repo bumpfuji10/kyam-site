@@ -80,10 +80,12 @@
 	- microCMSのAPI KEYは.env.localファイルに記載されているので、そちらを参照すること。
 	- API KEYへのアクセスは"process.env.MICROCMS_API_KEYで参照すること。
 	- APIのURLは"https://lbt0630zfb.microcms.io/api/v1"である。
+	- 記事一覧APIのエンドポイントは、"https://lbt0630zfb.microcms.io/api/v1/articles"である。
+	- 記事詳細APIのエンドポイントは、"https://lbt0630zfb.microcms.io/api/v1/articles/${articleId}"である。
+	- 実装方法は基本任せるが、API_BASE_URLなどを定数定義して、API_BASE_URL/articles/${articleId}のように、一覧・詳細によってエンドポイントを切り分けて実装してもよい。
 
 ## 開発における注意点
 - ESLintなどの静的解析ツールはかならず通過すること。
-- 
 
 - **開発サーバー**: `npm run dev` (uses Turbopack for faster builds)
 - **ビルド**: `npm run build`
