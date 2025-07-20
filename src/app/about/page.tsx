@@ -2,30 +2,34 @@ import { Mail, Github, Twitter, MapPin, Calendar } from 'lucide-react';
 
 export default function AboutPage() {
   const skills = [
-    { category: 'フロントエンド', items: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Vue.js'] },
-    { category: 'バックエンド', items: ['Node.js', 'Python', 'PostgreSQL', 'MongoDB', 'Redis'] },
-    { category: 'インフラ・ツール', items: ['Docker', 'AWS', 'Vercel', 'Git', 'GitHub Actions'] },
-    { category: 'その他', items: ['Figma', 'Sketch', 'Adobe XD', 'Photoshop', 'Illustrator'] },
+    { category: 'JobSkills', items: ['Ruby', 'Ruby on Rails', 'JavaScript', 'Vue.js', 'SaSS', 'SQL(MySQL)', 'Docker'] },
+    { category: 'ExperiencedSkills', items: ['PHP', 'Laravel', 'GraphQL', 'TypeScript'] }
   ];
 
   const experiences = [
     {
-      company: 'テックスタートアップ株式会社',
-      position: 'フロントエンドエンジニア',
-      period: '2022年4月 - 現在',
-      description: 'SaaSプロダクトのフロントエンド開発をリード。React/TypeScriptを使用したWebアプリケーションの設計・開発を担当。',
+      company: '事業会社',
+      position: 'Webエンジニア',
+      period: '2025年7月 - 現在',
+      description: 'メインとなるプロダクトの開発に従事。',
     },
     {
-      company: 'フリーランス',
-      position: 'Webデベロッパー',
-      period: '2020年6月 - 2022年3月',
-      description: '中小企業向けのWebサイト制作とWebアプリケーション開発。WordPress、React、Vue.jsを活用した案件を多数手がける。',
+      company: '事業会社',
+      position: 'Webエンジニア',
+      period: '2023年2月 - 2025年6月',
+      description: 'オンラインコミュニティプラットフォームの機能開発に従事。社内ツールの改善や、問い合わせ対応なども行う。',
     },
     {
-      company: 'システム開発会社',
-      position: 'ジュニアエンジニア',
-      period: '2019年4月 - 2020年5月',
-      description: 'エンタープライズ向けWebシステムの開発・保守業務。Java、SpringBootを使用したバックエンド開発に従事。',
+      company: '事業会社',
+      position: 'サーバーサイドエンジニア',
+      period: '2022年7月 - 2022年12月',
+      description: 'レンタルスペースのマッチングプラットフォームの開発に従事。'
+    },
+    {
+      company: '専門商社',
+      position: 'セールス',
+      period: '2019年4月 - 2022年6月',
+      description: '防犯カメラをメインとしたセキュリティ関連商材を、分譲マンションの管理組合や賃貸物件オーナーに提案・販売。',
     },
   ];
 
@@ -33,7 +37,6 @@ export default function AboutPage() {
     <div className="max-w-4xl mx-auto px-4 py-8">
       <div className="mb-12">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">プロフィール</h1>
-        <p className="text-xl text-gray-600">Web開発とソフトウェア設計に情熱を注ぐエンジニアです</p>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -50,17 +53,11 @@ export default function AboutPage() {
             <div className="space-y-3 text-sm">
               <div className="flex items-center text-gray-600">
                 <MapPin className="w-4 h-4 mr-2" />
-                <span>東京, 日本</span>
+                <span>Yokohama, Japan</span>
               </div>
               <div className="flex items-center text-gray-600">
                 <Calendar className="w-4 h-4 mr-2" />
-                <span>エンジニア歴 5年</span>
-              </div>
-              <div className="flex items-center text-gray-600">
-                <Mail className="w-4 h-4 mr-2" />
-                <a href="mailto:contact@example.com" className="text-blue-600 hover:text-blue-700">
-                  contact@example.com
-                </a>
+                <span>エンジニア歴 3年</span>
               </div>
             </div>
             
@@ -91,19 +88,31 @@ export default function AboutPage() {
 
         <div className="lg:col-span-2 space-y-8">
           <section className="bg-white rounded-lg border border-gray-200 p-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">自己紹介</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">Kyamについて</h3>
             <div className="prose prose-lg max-w-none text-gray-700">
               <p className="mb-4">
-                こんにちは！Yo Kamadaです。Web開発とソフトウェア設計に情熱を注ぐソフトウェアエンジニアです。
-                新しい技術を学び、実践することが大好きで、常にユーザーにとって価値のあるプロダクトを作ることを心がけています。
+                コニチワー！都内でエンジニアをしています。Yo Kamadaです。
               </p>
               <p className="mb-4">
-                フロントエンドを中心としながらも、バックエンドからインフラまで幅広い技術領域に興味を持ち、
-                チーム全体でより良いプロダクトを作り上げることを大切にしています。
+                このブログは技術的な学びやらtipsやらその他のサムシングなものを書いていくブログです。技術っぽい話が多め、それ以外の話は1割くらいです。
               </p>
-              <p>
-                このブログでは、日々の技術的な学びや個人開発プロジェクトについて発信しています。
-                読者の皆様の学習や開発に少しでもお役に立てれば幸いです。
+            </div>
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">これまで</h3>
+            <div className="prose prose-lg max-w-none text-gray-700">
+              <p className="mb-4">
+                （簡単な経歴については下部にある経歴を参照してください）
+              </p>
+              <p className="mb-4">
+                2022年からエンジニアのお仕事をスタート。少しだけPHPやLaravelやGraphQLを触って実装したりテストを書いたりしました。
+              </p>
+              <p className="mb-4">
+                その後2023年2月から都内でオンラインコミュニティのプラットフォームを作る会社にエンジニアとして入社し、開発業務にあたっておりました。
+              </p>
+              <p className="mb-4">
+                2025年の7月から、都内にあるスタートアップでエンジニアとして(横浜の自宅から)稼働しています。
+              </p>
+              <p className='mb-4'>
+                夢は海の見える街でワンコと散歩することです。
               </p>
             </div>
           </section>
