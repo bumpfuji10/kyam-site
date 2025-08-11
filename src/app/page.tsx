@@ -3,6 +3,8 @@ import BlogPost from '@/components/BlogPost';
 import Sidebar from '@/components/Sidebar';
 import Link from 'next/link';
 
+export const dynamic = 'force-dynamic';
+
 export default async function Home() {
   try {
     const articlesData = await getArticles({ limit: 6, orders: '-publishedAt' });
