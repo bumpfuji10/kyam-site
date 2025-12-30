@@ -96,7 +96,7 @@ export default function AboutPage() {
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Kyamについて</h3>
             <div className="prose prose-lg max-w-none text-gray-700">
               <p className="mb-4">
-                コニチワー！都内でエンジニアをしています。Yo Kamadaです。
+                Yo Kamadaです。都内のSaaSでソフトウェアエンジニアとして働いています。普段は自宅からリモートで稼働しています。
               </p>
               <p className="mb-4">
                 このブログは技術的な学びやらtipsやらその他のサムシングなものを書いていくブログです。技術っぽい話が多め、それ以外の話は1割くらいです。
